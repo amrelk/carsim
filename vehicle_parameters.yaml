@@ -1,0 +1,41 @@
+vehicle:
+  motor: electric
+  mass: 300 # kg
+
+tire:
+  radius: 0.2 # [m] an extreme oversimplification as always
+  MOI: 2 # kg*m^2
+  pacejka:
+    b0: 1.5
+    b1: 0
+    b2: 1.4
+    b3: 0
+    b4: 0.3
+    b5: 0
+    b6: 0
+    b7: 0
+    b8: -2
+    b9: 0
+    b10: 0
+    b11: 0
+    b12: 0
+    b13: 0
+
+
+aero:
+  A: 1 # m^2, front cross sectional area
+  Cd: 0.73
+  Cl: 0 # coefficent of lift, should be negative
+
+motor:
+  Kv: 1.06 # rad/s/Vdc
+  Kt: 1.1 # Nm/Arms
+  R: 0.1 # ohm
+  Vin: 400 # Vdc
+  Imax: 250 # Arms
+  MOI: 0.0421 # kg*m^2
+
+trans:
+  ratio: 2 # in/out
+  MOI: 0.025 # kg*m^2
+
